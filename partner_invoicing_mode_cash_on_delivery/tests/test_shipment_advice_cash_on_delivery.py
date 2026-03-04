@@ -4,11 +4,11 @@
 
 from odoo import Command
 
-from odoo.addons.base.tests.common import BaseCommon
+from odoo.addons.partner_invoicing_mode.tests.common import CommonPartnerInvoicingMode
 from odoo.addons.queue_job.tests.common import trap_jobs
 
 
-class TestPartnerInvoiceCashOnDelivery(BaseCommon):
+class TestPartnerInvoiceCashOnDelivery(CommonPartnerInvoicingMode):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
